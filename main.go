@@ -16,13 +16,6 @@ var (
 	ErrBadValue = errors.New("kvstore: bad value")
 )
 
-// type ColObj struct {
-// 	Name string
-// 	Type string
-// 	Data []interface{}
-// 	Pres []int
-// }
-
 type InfoObj struct {
 	Name string
 	Pid string
@@ -40,11 +33,9 @@ type GetPidArgs struct {
 type PutArgs struct {
 	Key string
 	Value interface{}
-	Base bool
 }
 type GetArgs struct {
 	Key string
-	Base bool
 }
 
 type KVStore struct {
